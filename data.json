@@ -1,12 +1,16 @@
 [
   {
     "id": 1,
-    "title": "복싱 입문자가 처음 준비할 장비",
+    "title": "아디쇼리 후기",
     "category": "장비",
-    "tags": ["글러브", "핸드랩", "입문"],
-    "summary": "처음 체육관에 가기 전 준비하면 좋은 기본 장비와 선택 기준 정리",
-    "date": "2024-05-18",
-    "url": "https://example.com/boxing-gear"
+    "tags": [
+      "아디쇼리",
+      "글러브",
+      "내구성"
+    ],
+    "summary": "넉넉한 내부 공간과 부드러운 쿠션으로 착용감과 스파링 안정성이 좋다는 후기. 손이 작은 사람에게는 헐거울 수 있고 내구성은 아쉽다는 평가.",
+    "date": "2026.05.29",
+    "url": "https://gall.dcinside.com/mgallery/board/view?id=bx&no=35537"
   },
   {
     "id": 2,
