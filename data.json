@@ -1,47 +1,56 @@
 [
   {
     "id": 1,
-    "title": "코수술 6개월차 후기",
-    "category": "성형",
-    "tags": ["코성형", "복코", "재수술"],
-    "summary": "6개월차가 된 지금 생각하는 장단점과 회복 과정 정리",
+    "title": "복싱 입문자가 처음 준비할 장비",
+    "category": "장비",
+    "tags": ["글러브", "핸드랩", "입문"],
+    "summary": "처음 체육관에 가기 전 준비하면 좋은 기본 장비와 선택 기준 정리",
     "date": "2024-05-18",
-    "url": "https://example.com/review1"
+    "url": "https://example.com/boxing-gear"
   },
   {
     "id": 2,
-    "title": "여드름 피부 레이저 치료 후기",
-    "category": "피부과",
-    "tags": ["여드름", "레이저", "피부관리"],
-    "summary": "여드름 흉터 때문에 레이저 치료를 받은 후기",
+    "title": "잽과 원투 기본 자세 체크",
+    "category": "기술",
+    "tags": ["잽", "원투", "기본기"],
+    "summary": "초보자가 자주 놓치는 가드, 어깨, 발 위치를 정리한 글",
     "date": "2024-05-15",
-    "url": "https://example.com/review2"
+    "url": "https://example.com/jab-cross"
   },
   {
     "id": 3,
-    "title": "라식 검사부터 수술 당일까지",
-    "category": "안과",
-    "tags": ["라식", "시력교정", "검사"],
-    "summary": "검사 항목, 대기 시간, 수술 직후 느낀 점을 정리했습니다.",
+    "title": "줄넘기 루틴으로 풋워크 만들기",
+    "category": "훈련",
+    "tags": ["줄넘기", "풋워크", "컨디셔닝"],
+    "summary": "복싱 스텝과 리듬감을 기르기 위한 10분 줄넘기 루틴",
     "date": "2024-04-28",
-    "url": "https://example.com/review3"
+    "url": "https://example.com/jump-rope-routine"
   },
   {
     "id": 4,
-    "title": "치아 미백 2주 관리 기록",
-    "category": "치과",
-    "tags": ["미백", "치아관리", "생활습관"],
-    "summary": "미백 후 색 변화와 커피를 줄였을 때의 차이를 기록했습니다.",
+    "title": "스파링 전 꼭 확인할 안전 수칙",
+    "category": "안전",
+    "tags": ["스파링", "마우스피스", "헤드기어"],
+    "summary": "첫 스파링 전에 확인해야 할 보호 장비와 강도 조절 기준",
     "date": "2024-04-21",
-    "url": "https://example.com/review4"
+    "url": "https://example.com/sparring-safety"
   },
   {
     "id": 5,
-    "title": "두피 클리닉 상담 후기",
-    "category": "두피관리",
-    "tags": ["두피", "탈모관리", "상담"],
-    "summary": "두피 촬영 상담과 홈케어 제품 추천을 받은 경험입니다.",
+    "title": "초보자 복싱 체육관 선택 기준",
+    "category": "체육관",
+    "tags": ["체육관", "코칭", "입문"],
+    "summary": "수업 방식, 거리, 분위기, 장비 대여 여부를 기준으로 정리",
     "date": "2024-03-30",
-    "url": "https://example.com/review5"
+    "url": "https://example.com/boxing-gym-guide"
+  },
+  {
+    "id": 6,
+    "title": "복싱 경기 기본 규칙 한눈에 보기",
+    "category": "규칙",
+    "tags": ["경기규칙", "라운드", "판정"],
+    "summary": "라운드 구성, 반칙, 판정 방식 등 경기를 볼 때 알아두면 좋은 기본 규칙",
+    "date": "2024-03-12",
+    "url": "https://example.com/boxing-rules"
   }
 ]
