@@ -245,6 +245,25 @@ select {
   line-height: 1.35;
 }
 
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 29px;
+  border: 1px solid #ddd0ff;
+  border-radius: 999px;
+  padding: 0 10px;
+  color: #4f3a83;
+  background: #fbf9ff;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .summary {
   margin: 0;
   color: var(--muted);

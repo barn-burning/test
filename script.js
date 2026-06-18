@@ -48,6 +48,7 @@ function normalizeItems(items) {
     id: item.id ?? index + 1,
     title: String(item.title ?? "제목 없음"),
     category: String(item.category ?? "기타"),
+    item: String(item.item ?? item.ITEM ?? ""),
     tags: Array.isArray(item.tags) ? item.tags.map(String) : [],
     summary: String(item.summary ?? ""),
     date: String(item.date ?? ""),
@@ -128,6 +129,7 @@ function getFilteredItems() {
         item.title,
         item.summary,
         item.category,
+        item.item,
         ...item.tags
       ].join(" ").toLowerCase();
 
@@ -165,6 +167,16 @@ function createCard(item) {
   const title = document.createElement("h3");
   title.textContent = item.title;
 
+  const metaRow = document.createElement("div");
+  metaRow.className = "meta-row";
+
+  if (item.item) {
+    const itemBadge = document.createElement("span");
+    itemBadge.className = "item-badge";
+    itemBadge.textContent = `대상: ${item.item}`;
+    metaRow.appendChild(itemBadge);
+  }
+
   const summary = document.createElement("p");
   summary.className = "summary";
   summary.textContent = item.summary;
@@ -183,9 +195,13 @@ function createCard(item) {
   link.href = item.url;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
-  link.textContent = "원문 링크";
+  link.textContent = "정보 링크";
 
-  article.append(cardTop, title, summary, tagRow, link);
+  article.append(cardTop, title);
+  if (metaRow.children.length) {
+    article.appendChild(metaRow);
+  }
+  article.append(summary, tagRow, link);
   return article;
 }
 
