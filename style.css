@@ -98,6 +98,14 @@ select {
   border-radius: 8px;
 }
 
+.sticky-search {
+  margin: 0;
+}
+
+.filter-controls {
+  display: block;
+}
+
 .search-box {
   display: grid;
   gap: 8px;
@@ -313,7 +321,7 @@ select {
 @media (max-width: 760px) {
   .page-shell {
     width: min(100% - 24px, 620px);
-    padding: 22px 0 126px;
+    padding: 22px 0 156px;
   }
 
   .site-header {
@@ -328,27 +336,57 @@ select {
 
   .layout {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 18px;
   }
 
   .filter-panel {
+    position: static;
+    display: contents;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .sticky-search {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    margin: -2px 0 0;
+    padding: 10px 0;
+    background: linear-gradient(180deg, rgba(251, 249, 255, 0.98) 0%, rgba(251, 249, 255, 0.92) 82%, rgba(251, 249, 255, 0) 100%);
+    backdrop-filter: blur(12px);
+  }
+
+  .sticky-search .search-box {
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--shadow);
+  }
+
+  .filter-controls {
     position: fixed;
     left: 10px;
     right: 10px;
     bottom: 10px;
-    top: auto;
     z-index: 20;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    max-height: 42vh;
+    max-height: 33vh;
     overflow: auto;
     padding: 12px;
+    border: 1px solid var(--line);
     border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
   }
 
-  .search-box,
   .sort-group {
     grid-column: 1 / -1;
   }
@@ -395,6 +433,10 @@ select {
   }
 
   .filter-panel {
+    display: contents;
+  }
+
+  .filter-controls {
     grid-template-columns: 1fr;
   }
 
